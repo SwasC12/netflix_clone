@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(17, 17, 17);
+    overflow: hidden;
+}
+
+#nf_logo{
+    max-width: 110px;
+    max-height: auto;
+    margin-left: 20px;
+}
+
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.browse_list{
+    list-style: none;
+    padding:0;
+    margin-left: 30px;
+}
+
+.browse_list li{
+    display: inline-block;
+    margin-right: 10px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+#search{
+    max-width: 20px;
+    max-height: auto;
+    margin-left: 430px;
+
+}
+
+#kids{
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    /* margin-left: auto; */
+    margin-left: 35px;
+}
+
+#bell{
+    max-width: 20px;
+    max-height: auto;
+    /* margin-left: auto; */
+    margin-left: 35px;
+}
+
+.prof-drop{
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 10px;
+    border:none;
+    cursor:pointer;
+}
+
+.prof-cont {
+    display: none;
+    position: absolute;
+    left: -160px;
+    background-color: #000000a1;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .prof-cont a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .prof-cont a img {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: auto; /* Center the images horizontally */
+    padding: 5px; /* Add padding to create space around the images */
+  }
+
+  .prof-cont img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+
+  }
+
+
+  .prof-drop:hover .prof-cont {
+    display: block;
+  }
