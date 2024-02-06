@@ -1,0 +1,115 @@
+
+body {
+    background-color: rgb(17, 17, 17);
+        overflow: hidden;
+}
+
+#heading {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#heading {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px; /* Adjust the margin bottom to control distance from images */
+}
+
+
+
+.profile-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+
+div.gallery {
+    border: 1px solid transparent; /* Remove border */
+    text-align: center;
+    max-width: 150px; /* Adjust the maximum width as desired */
+    margin: 0 auto; /* Center the gallery horizontally */
+}
+
+
+
+div.gallery:hover .desc {
+    display: block; /* Show the description box only when hovering over the image */
+}
+
+
+div.gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Adjust the value to control the roundness */
+}
+
+div.gallery:hover img {
+    border: 3px solid #ffffff; /* Add border only to the image */
+    border-radius: 10px; /* Adjust the value to control the roundness */
+}
+
+
+
+
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    background-color: transparent;
+    transition: color 0.3s;
+    color: #777;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none; /* Remove border */
+}
+
+
+div.gallery:hover div.desc {
+    color: white; /* Change background color on hover */
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    margin: 5px; /* Adjust the margin to bring the images closer together */
+    float: left;
+    width: 17%; /* Adjust width as needed */
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
